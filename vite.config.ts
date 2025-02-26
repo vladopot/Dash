@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     Inspect()
   ],
-  base: '/Dash/'
+  base: '/'
 })
