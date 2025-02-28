@@ -12,7 +12,7 @@ import { RightOutlined } from '@ant-design/icons';
 import { Link } from 'react-router';
 
 const UserList = () => {
-  const link = 'https://dummyjson.com/users';
+  const link = import.meta.env.VITE_URL_TO_REQUEST;
   const language = useSelector((state: RootState) => state.language.value);
   const [currentPage, sePage] = useState(1);
   const [usersToShow, setUsers] = useState<userModel[]>();

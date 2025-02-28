@@ -1,6 +1,10 @@
-.tittleWrapper {
+.tittle {
+    background-color: #D3D3D3;
+}
+
+.userDataWrapper {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
 }
 
 .userData {

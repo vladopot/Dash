@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { Outlet } from 'react-router'
 import { Button, Layout, Menu, Select } from "antd";
 import { useSelector, useDispatch } from 'react-redux'
+import { useNavigate } from "react-router";
 import {
     MenuFoldOutlined,
     MenuUnfoldOutlined,
@@ -18,6 +19,7 @@ const LayOut = () => {
     const [callapsed, setCollapsed] = useState(false);
     const [disable, setDisable] = useState(false);
     const language = useSelector((state: RootState) => state.language.value);
+    const navigate = useNavigate();
     const dispatch = useDispatch();
 
     useEffect(() => window.innerWidth < 768 ? setCollapsed(true) : setCollapsed(false) ,[])
@@ -42,14 +44,16 @@ const LayOut = () => {
                     defaultSelectedKeys={['1']}
                     items={[
                         {
+                            onClick: () => navigate('/'),
                             key: '1',
                             icon: <UserOutlined />,
                             label: language === 'ENG' ? EngLangDatas.SideBar.UsersBtn : RusLangDatas.SideBar.UsersBtn
                         },
                         {
+                            onClick: () => navigate('UserSpectrator'),
                             key: '2',
                             icon: <StockOutlined />,
-                            label: language === 'ENG' ? EngLangDatas.SideBar.StatsBtn : RusLangDatas.SideBar.StatsBtn,
+                            label: language === 'ENG' ? EngLangDatas.SideBar.StatsBtn : RusLangDatas.SideBar.StatsBtn ,
                         }
                     ]}>
                     
