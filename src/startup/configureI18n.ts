@@ -23,7 +23,7 @@ export const configureI18n = async () => {
         escapeValue: false,
       },
       backend: {
-        loadPath: 'public/locales/{{ns}}/{{lng}}.json',
+        loadPath: '/locales/{{ns}}/{{lng}}.json',
       },
     });
 };
