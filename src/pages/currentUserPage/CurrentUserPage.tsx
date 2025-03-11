@@ -1,15 +1,15 @@
-import { RootState } from '../../Redux/store';
+import { RootState } from '../../redux/store';
 import { useSelector } from 'react-redux';
 import { useNavigate  } from 'react-router';
 import styles from './currentUserPage.module.scss'
 import { useParams } from 'react-router';
-import { userModel } from '../../models/ResponseModel';
 import { Button } from 'antd';
 import { LeftOutlined } from '@ant-design/icons';
 import PersonalData from './personalData/PersonalData';
 import BankDatas from './bankDatas/BankDatas';
 import JobPlace from './jobPlace/JobPlace';
 import { useTranslation } from 'react-i18next';
+import { userModel } from '../../common/models/ResponseModel';
 
 const CurrentUserPage = () => {
     const { t } = useTranslation();

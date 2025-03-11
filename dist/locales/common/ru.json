@@ -1,0 +1,52 @@
+{
+    "SideBar": {
+        "UsersBtn": "Пользователи",
+        "StatsBtn": "Свяжись с нами!"
+    },
+    "UserList": {
+        "tittle": "Пользователи"
+    },
+    "UserPage": {
+        "tittle": "Пользователь",
+        "personalData": {
+            "tittle": "Персональные данные",
+            "name": "Имя",
+            "surname": "Фамилия",
+            "gender": "Пол",
+            "phone": "Номер телефона",
+            "mail": "Электронная почта",
+            "age": "Возраст",
+            "birth_date": "Дата рождения",
+            "blood_group": "Группа крови",
+            "adress": "Адрес",
+            "post_code": "Почтовый индекс",
+            "state": "Штат"
+        },
+        "bankData": {
+            "tittle": "Банковские данные",
+            "expirationDate": "Срок действия карты",
+            "cardNumber": "Номер карты",
+            "cardType": "Тип карты",
+            "currency": "Валюта",
+            "iban": "IBAN"
+        },
+        "jobInformation": {
+            "tittle": "Информация о месте работы",
+            "department": "Отдел",
+            "companyName": "Название организации"
+        }
+    },
+    "ContactUS": {
+        "tittle": "Свяжись с нами",
+        "name": "Имя",
+        "surname": "Фамилия",
+        "fatherName": "Отчество",
+        "Email": "",
+        "succesMessage": "Ваше сообщение доставлено!"
+    },
+    "errors": {
+        "require": "Это поле является обязательным",
+        "minLength": "Минимум 3 символа",
+        "emailFormat": "Используйте следующий формат: example@example.com"
+    }
+}

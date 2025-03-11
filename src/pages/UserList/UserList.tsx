@@ -2,14 +2,14 @@ import { useEffect, useState } from 'react'
 import Styles from './UserList.module.scss'
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import { RootState } from '../../Redux/store';
 import { Button, Pagination } from 'antd';
 import Search from 'antd/es/input/Search';
-import { ResponseModel, userModel } from '../../models/ResponseModel';
-import { addData } from '../../Redux/UsersSlice';
 import { RightOutlined } from '@ant-design/icons';
 import { Link } from 'react-router';
 import { useTranslation } from 'react-i18next';
+import { userModel, ResponseModel } from '../../common/models/ResponseModel';
+import { RootState } from '../../redux/store';
+import { addData } from '../../redux/usersSlice';
 
 const UserList = () => {
   const { t } = useTranslation();

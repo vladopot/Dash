@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit"
-import languageReducer from './lLanguageSlice'
-import usersReducer from './UsersSlice'
+import languageReducer from './languageSlice'
+import usersReducer from './usersSlice'
 
 
 export const store = configureStore({

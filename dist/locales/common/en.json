@@ -1,0 +1,53 @@
+{
+    "SideBar": {
+        "UsersBtn": "Users",
+        "StatsBtn": "ContactUs"
+    },
+    "UserList": {
+        "tittle": "Users"
+    },
+    "UserPage": {
+        "tittle": "User",
+        "personalData": {
+            "tittle": "Personal data",
+            "name": "Name",
+            "surname": "Surname",
+            "gender": "Gender",
+            "phone": "Phone Number",
+            "mail": "Email",
+            "age": "Age",
+            "birth_date": "Birth date",
+            "blood_group": "Blood group",
+            "adress": "Address",
+            "post_code": "Postal code",
+            "state": "State"
+        },
+        "bankData": {
+            "tittle": "Bank data",
+            "expirationDate": "Card expiration date",
+            "cardNumber": "Card number",
+            "cardType": "Card type",
+            "currency": "Currency",
+            "iban": "IBAN"
+        },
+        "jobInformation": {
+            "tittle": "Information about the place of work",
+            "department": "Department",
+            "companyName": "Company name"
+        }
+    },
+    "ContactUS": {
+        "tittle": "Contact Us",
+        "name": "Name",
+        "surname": "Surname",
+        "fatherName": "Father Name",
+        "email": "Email",
+        "succesMessage": "Your message has been delivered!"
+    },
+    "errors": {
+        "require": "Please fill this field",
+        "minLength": "Min length 3 symbols",
+        "emailFormat": "Please use format: example@example.com"
+    }
+    
+}

@@ -1,8 +1,8 @@
 import styles from './BankDatas.module.scss'
-import { RootState } from '../../../Redux/store';
 import { useSelector } from 'react-redux';
-import { userModel } from '../../../models/ResponseModel';
 import { useTranslation } from 'react-i18next';
+import { userModel } from '../../../common/models/ResponseModel';
+import { RootState } from '../../../redux/store';
 
 const BankDatas = ({id}:{id:number}) => {
     const { t } = useTranslation();

@@ -4,9 +4,9 @@ import { BrowserRouter } from 'react-router'
 import './index.scss'
 import App from './App.tsx'
 import { Provider } from 'react-redux'
-import { store } from './Redux/store.ts'
 import '@ant-design/v5-patch-for-react-19'
 import { startup } from './startup/index.ts'
+import { store } from './redux/store.ts'
 
 startup().then(() => {
   createRoot(document.getElementById('root')!).render(

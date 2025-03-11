@@ -1,5 +1,6 @@
 import * as yup from "yup";
-import { EMAIL_FORMAT, MIN_LENGTH, REQUIRED } from "../../constants/schemeMessages";
+import { REQUIRED, MIN_LENGTH, EMAIL_FORMAT } from "../constants/schemeMessages";
+
 
 export const FeedBackValidationScheme = yup.object({
     name: yup.string().trim().required(REQUIRED).min(3, MIN_LENGTH),

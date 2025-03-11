@@ -14,7 +14,7 @@ const FeedBackForm = () => {
     const success = () => {
         messageApi.open({
         type: 'success',
-        content: 'This is a success message',
+        content: t("ContactUS.succesMessage"),
         });
     };
 

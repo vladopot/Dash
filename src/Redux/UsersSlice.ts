@@ -1,5 +1,5 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { ResponseModel, userModel } from "../models/ResponseModel";
+import { ResponseModel, userModel } from "../common/models/ResponseModel";
 
 const initialState: ResponseModel = {
     users: []

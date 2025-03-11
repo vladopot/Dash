@@ -1,9 +1,10 @@
 import { Route, Routes } from 'react-router'
 import './App.scss'
-import LayOut from './Components/LayOut'
-import CurrentUserPage from './Components/currentUserPage/CurrentUserPage'
-import UserList from './Components/UserList/UserList'
 import ContactUs from './pages/contactUs'
+import LayOut from './common/components/LayOut'
+import CurrentUserPage from './pages/currentUserPage/CurrentUserPage'
+import UserList from './pages/UserList/UserList'
+
 
 function App() {
 

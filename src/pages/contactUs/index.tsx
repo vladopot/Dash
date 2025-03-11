@@ -1,4 +1,3 @@
-import React from 'react'
 import { Flex } from "antd";
 import FeedBackForm from './components/FeedBackForm';
 import { useTranslation } from 'react-i18next';
