@@ -1,0 +1,13 @@
+.tittleWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.userData {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

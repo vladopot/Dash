@@ -1,0 +1,85 @@
+@media (min-width: 769px) {
+    .formClass {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 60%;
+        max-width: 500px;
+    
+        .inputWrapper {
+            display: grid;
+            grid-template-columns: 100px 1fr;
+    
+            .inputClass {
+                height: 30px;
+                border-radius: 7px;
+                border: 1px solid rgb(197, 197, 197);
+                padding-left: 7px;
+                transition: border-color 0.3s ease, background-color 0.3s ease;
+            }
+
+            .inputClass:hover,
+            .inputClass:focus {
+                border: 1px solid rgb(37, 99, 255);
+            }
+
+            .error {
+                grid-column: 2/3;
+                color: rgb(255, 201, 201);
+            }
+        }
+
+        .SubmitBtn {
+            width: 100px;
+            height: 30px;
+            border-radius: 7px;
+            border: none;
+            background-color: #1677ff;
+            color: white;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .formClass {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 60%;
+        max-width: 500px;
+    
+        .inputWrapper {
+            display: grid;
+            grid-template-rows: 1ft 1fr;
+            gap: 3px;
+    
+            .inputClass {
+                height: 30px;
+                width: 100%;
+                border-radius: 7px;
+                border: 1px solid rgb(197, 197, 197);
+                padding-left: 7px;
+                transition: border-color 0.3s ease, background-color 0.3s ease;
+            }
+
+            .inputClass:hover,
+            .inputClass:focus {
+                border: 1px solid rgb(37, 99, 255);
+            }
+
+            .error {
+                color: rgb(255, 201, 201);
+            }
+        }
+
+        .SubmitBtn {
+            width: 100px;
+            height: 30px;
+            border-radius: 7px;
+            border: none;
+            background-color: #1677ff;
+            color: white;
+        }
+    }
+}
+

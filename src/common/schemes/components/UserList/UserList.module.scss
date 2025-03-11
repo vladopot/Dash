@@ -1,0 +1,23 @@
+.main {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100%;
+    .userList {
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        height: 100%;
+        margin: 10px 0;
+        .user {
+            display: grid;
+            width: 100%;
+            grid-template-columns: auto 1fr auto;
+            column-gap: 10px;
+            .img_wrapper {
+                height: 45px;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

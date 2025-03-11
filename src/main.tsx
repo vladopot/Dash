@@ -6,13 +6,16 @@ import App from './App.tsx'
 import { Provider } from 'react-redux'
 import { store } from './Redux/store.ts'
 import '@ant-design/v5-patch-for-react-19'
+import { startup } from './startup/index.ts'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
-    <Provider store={store}>
-      <BrowserRouter basename="/Dash">
-        <App />
-      </BrowserRouter>
-    </Provider>
-  </StrictMode>,
-)
+startup().then(() => {
+  createRoot(document.getElementById('root')!).render(
+    <StrictMode>
+      <Provider store={store}>
+        <BrowserRouter basename="/Dash">
+          <App />
+        </BrowserRouter>
+      </Provider>
+    </StrictMode>,
+  )
+})
