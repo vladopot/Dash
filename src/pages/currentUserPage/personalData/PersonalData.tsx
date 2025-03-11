@@ -1,4 +1,4 @@
-import styles from './personalData.module.scss'
+import styles from './PersonalData.module.scss'
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { userModel } from '../../../common/models/ResponseModel';
