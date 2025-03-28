@@ -20,8 +20,49 @@ export interface userModel {
         type: string
     },
     ip: string,
+    address: Address,
+    macAddress: string,
+    university: string,
+    bank: UserBankData,
+    company: UserCompany,
+    ein: string,
+    ssn: string,
+    userAgent: string,
+    crypto: {
+        coin: string,
+        wallet: string,
+        network: string,
+    }
+    role: string
+}
+
+interface Address {
+    address: string,
+    city: string,
+    state: string,
+    stateCode: string,
+    postalCode: string,
+    coordinates: {
+        lat: number,
+        lng: number
+    }
+    country: string
+}
+
+interface UserBankData {
+    cardExpire: string,
+    cardNumber: string,
+    cardType: string,
+    currency: string,
+    iban: string,
+}
+
+interface UserCompany {
+    department:string,
+    name: string,
+    title: string,
     address: {
-        address: string,
+        address: string
         city: string,
         state: string,
         stateCode: string,
@@ -32,41 +73,6 @@ export interface userModel {
         }
         country: string
     }
-    macAddress: string,
-    university: string,
-    bank: {
-        cardExpire: string,
-        cardNumber: string,
-        cardType: string,
-        currency: string,
-        iban: string,
-    },
-    company: {
-        department:string,
-        name: string,
-        title: string,
-        address: {
-            address: string
-            city: string,
-            state: string,
-            stateCode: string,
-            postalCode: string,
-            coordinates: {
-                lat: number,
-                lng: number
-            }
-            country: string
-        }
-    }
-    ein: string,
-    ssn: string,
-    userAgent: string,
-    crypto: {
-        coin: string,
-        wallet: string,
-        network: string,
-    }
-    role: string
 }
 
 export interface ResponseModel {

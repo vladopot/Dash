@@ -2,8 +2,9 @@ import { Route, Routes } from 'react-router'
 import './App.scss'
 import ContactUs from './pages/contactUs'
 import LayOut from './common/components/LayOut'
-import CurrentUserPage from './pages/currentUserPage/CurrentUserPage'
-import UserList from './pages/UserList/UserList'
+import UserList from './pages/UserList'
+import CurrentUserPage from './pages/currentUserPage'
+
 
 
 function App() {

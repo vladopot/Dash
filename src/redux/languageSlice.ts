@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { Languages } from "../common/enums/Languages";
 
 export interface LangState {
     value: string
@@ -13,7 +14,7 @@ export const LangSlice = createSlice({
     initialState,
     reducers: {
         toogleLanguage: (state) => {
-            state.value = (state.value === 'ENG') ? 'RUS' : 'ENG';
+            state.value = (state.value === Languages.ENGLISH) ? Languages.RUSSIAN : Languages.ENGLISH;
         }
     }
 });

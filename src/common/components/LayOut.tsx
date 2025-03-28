@@ -12,6 +12,7 @@ import Sider from 'antd/es/layout/Sider';
 import { Content, Header } from 'antd/es/layout/layout';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
+import { Languages } from '../enums/Languages';
 
 const LayOut = () => {
     const { t } = useTranslation();
@@ -81,14 +82,14 @@ const LayOut = () => {
                     </Button>
                     <Select
                         onChange={(value) => {changeLang(value)}}
-                        defaultValue={'ENG'}
+                        defaultValue={Languages.ENGLISH}
                         style={{
                             width: 100,
                             marginRight: 16
                         }}
                         options={[
-                            { value: 'en', label: <span>ENG</span> },
-                            { value: 'ru', label: <span>RUS</span> }
+                            { value: 'en', label: <span>{Languages.ENGLISH}</span> },
+                            { value: 'ru', label: <span>{Languages.RUSSIAN}</span> }
                         ]}/>
                 </Header>
                 <Content
